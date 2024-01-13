@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Simon Game</title>
+  </head>
+  <body>
+    <main>
+      <section id="green-button" data-color="green"></section>
+      <section id="red-button" data-color="red"></section>
+      <section id="yellow-button" data-color="yellow"></section>
+      <section id="blue-button" data-color="blue"></section>
+      <div id="buttons">
+        <h2 class="uppercase">simon!</h2>
+        <div>
+          <div class="checkbox-buttons">
+            <input type="checkbox" name="power" id="power-button" />
+            <label for="power" class="uppercase">power</label>
+          </div>
+          <button>Start</button>
+          <div class="checkbox-buttons">
+            <input type="checkbox" name="strict" id="strict-button" />
+            <label for="strict" class="uppercase">strict</label>
+          </div>
+        </div>
+        <div id="counter">
+          <div><span id="wins"></span></div>
+          <p class="uppercase">count</p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="game.js"></script>
+</html>
